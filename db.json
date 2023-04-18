@@ -4,7 +4,7 @@
       "id": "e2e03258-cab3-4644-80c5-a5e1d312c93d",
       "brand": "Nike",
       "colorway": "Baroque Brown/Baroque Brown-Baroque Brown",
-      "estimatedMarketValue": 118,
+     
       "gender": "men",
       "image": {
         "360": [],
@@ -12,12 +12,7 @@
         "small": "https://images.stockx.com/images/Nike-Air-Force-1-Low-Supreme-Baroque-Brown.jpg?fit=fill&bg=FFFFFF&w=375&h=375&fm=webp&auto=compress&trim=color&q=90&dpr=2&updated_at=1677481787",
         "thumbnail": "https://images.stockx.com/images/Nike-Air-Force-1-Low-Supreme-Baroque-Brown.jpg?fit=fill&bg=FFFFFF&w=200&h=200&fm=webp&auto=compress&trim=color&q=90&dpr=2&updated_at=1677481787"
       },
-      "links": {
-        "stockX": "https://stockx.com/nike-air-force-1-low-supreme-baroque-brown",
-        "goat": "",
-        "flightClub": "",
-        "stadiumGoods": ""
-      },
+      
       "name": "Nike Air Force 1 Low Supreme Baroque Brown",
       "releaseDate": "2023-12-01",
       "releaseYear": "2023",
