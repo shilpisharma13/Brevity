@@ -1,9 +1,9 @@
-import Navbar from './Navbar'
-import Footer from './Footer'
-import Filter from './Filter'
+import Navbar from './navbar'
+import Footer from './footer'
+import Filter from './filter'
 import Products from './Products'
-import FeaturedProducts from './FeaturedProducts'
-import HeroComp from './Hero'
+import FeaturedProducts from './featuredProducts'
+import HeroComp from './hero'
 import SingleProduct from './SingleProduct'
 export {
   Navbar,

@@ -9,7 +9,7 @@ const Navbar = () => {
     <>
       <div className='grid grid-cols-4'>
         <div>
-          <GiSonicShoes class='w-24 h-24' />
+          <GiSonicShoes className='w-24 h-24' />
         </div>
         {links.map((link) => {
           const { id, text, url } = link

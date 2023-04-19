@@ -3,7 +3,7 @@ import React from 'react'
 import styled from 'styled-components'
 import SingleProduct from './SingleProduct'
 
-const Products = () => {
+const Products = ({ product }) => {
   const { products, products_loading } = useProductsContext()
 
   if (products_loading) return <h1>Loading....</h1>
@@ -11,9 +11,7 @@ const Products = () => {
   return (
     <Wrapper>
       <div className='container'>
-        {products.map((product) => {
-          return <SingleProduct key={product.id} {...product} />
-        })}
+        <SingleProduct key={product.id} {...product} />
       </div>
     </Wrapper>
   )
@@ -22,7 +20,7 @@ const Products = () => {
 export default Products
 const Wrapper = styled.div`
   .container {
-    display: grid;
+    display: flex;
     grid-template-columns: 1fr 1fr 1fr;
   }
   img {

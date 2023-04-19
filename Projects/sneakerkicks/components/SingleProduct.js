@@ -3,14 +3,14 @@ import React from 'react'
 import styled from 'styled-components'
 
 const SingleProduct = ({ id, brand, image, name, retailPrice }) => {
-  return (
-    <Wrapper>
-      <Link href='/products/[productId]'>
-        <img src={image.small} alt={brand} />
-        {name}- ${retailPrice}
-      </Link>
-    </Wrapper>
-  )
+  return <div>Single Product</div>
+
+  // return (
+  //   <Wrapper>
+  //     <img src={image.small} alt={brand} />
+  //     {name}- ${retailPrice}
+  //   </Wrapper>
+  // )
 }
 
 export default SingleProduct
