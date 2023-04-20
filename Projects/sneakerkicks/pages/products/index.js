@@ -23,7 +23,7 @@ const ProductDisplay = ({ shoes }) => {
 
 export default ProductDisplay
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
   const response = await fetch('http://localhost:4000/sneakers')
   const data = await response.json()
 
@@ -33,3 +33,13 @@ export async function getStaticProps() {
     },
   }
 }
+// export async function getStaticProps() {
+//   const response = await fetch('http://localhost:4000/sneakers')
+//   const data = await response.json()
+
+//   return {
+//     props: {
+//       shoes: data.filter((shoe) => shoe.image.original !== ''),
+//     },
+//   }
+// }
