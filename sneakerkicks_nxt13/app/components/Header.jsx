@@ -1,14 +1,15 @@
 import Link from 'next/link'
+import NavLink from './Nav-link'
 
 const Header = () => {
   return (
     <>
-      <div className='margin-auto'>SneakerKicks</div>
-      <div className='grid grid-cols-5'>
-        <Link href={'/about'}>About</Link>
-        <Link href={'/products'}>Products</Link>
-        <Link href={'/signin'}>SignIn</Link>
-        <Link href={'/cart'}>Cart</Link>
+      <div className=' p-4'>SneakerKicks</div>
+      <div className='p-4 space-x-4'>
+        <NavLink href={'/about'}>About</NavLink>
+        <NavLink href={'/products'}>Products</NavLink>
+        <NavLink href={'/signin'}>SignIn</NavLink>
+        <NavLink href={'/cart'}>Cart</NavLink>
       </div>
     </>
   )

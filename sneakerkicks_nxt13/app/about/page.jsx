@@ -1,3 +1,6 @@
+import Footer from '../components/Footer'
+import Header from '../components/Header'
+
 const AboutPage = () => {
   return (
     <>
@@ -7,3 +10,13 @@ const AboutPage = () => {
 }
 
 export default AboutPage
+
+// AboutPage.getLayout = (page) => {
+//   return (
+//     <div>
+//       <Header/>
+//       {page}
+//       <Footer/>
+//     </div>
+//   )
+// }

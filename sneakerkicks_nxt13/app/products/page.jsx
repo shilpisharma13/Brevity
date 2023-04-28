@@ -1,4 +1,10 @@
-import Link from 'next/link'
+'use client'
+
+import { use, useEffect, useContext } from 'react'
+import Filter from '../components/Filter'
+import Products from '../components/Products'
+import Sort from '../components/Sort'
+import { FilterProvider, useFilterContext } from '../context/filter_context'
 
 async function fetchProducts() {
   const response = await fetch('http://localhost:4000/sneakers')
@@ -6,28 +12,26 @@ async function fetchProducts() {
   return data
 }
 
-const Products = async () => {
-  const sneakers = await fetchProducts()
+// useEffect(() => {}, [])
 
+const Page = () => {
+  const sneakers = use(fetchProducts())
   return (
+    // <div className=''>
     <div>
-      {sneakers
-        .filter((shoe) => shoe.image.original !== '')
-        .map((product) => {
-          const { id, image, name, brand, retailPrice } = product
-          return (
-            <div key={product.id}>
-              <Link href={`products/${product.id}`}>
-                <div className='grid-cols-2'>
-                  <img className='w-20' src={image.thumbnail} alt={brand} />
-                  {name}- ${retailPrice}
-                </div>
-              </Link>
-            </div>
-          )
-        })}
+      <Sort />
+      {/* </div> */}
+
+      <div className='grid grid-cols-2 justify-items-start'>
+        <div>
+          <Filter sneakers={sneakers} />
+        </div>
+        <div>
+          <Products sneakers={sneakers} />
+        </div>
+      </div>
     </div>
   )
 }
 
-export default Products
+export default Page

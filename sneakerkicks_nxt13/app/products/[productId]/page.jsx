@@ -1,6 +1,7 @@
 import Product from '@/app/components/Product'
 
 const SingleProduct = ({ params: { productId } }) => {
+  
   // console.log(productId)
   return (
     <div>
